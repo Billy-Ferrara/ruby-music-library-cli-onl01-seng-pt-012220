@@ -21,10 +21,7 @@ class MusicLibraryController
 
       input = gets.strip
     end
-    while input = " list songs"
-      list_songs
-      input = gets.strip
-    end 
+    
 
   end
 
