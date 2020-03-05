@@ -26,21 +26,18 @@ class MusicLibraryController
   def list_songs
     Song.all.sort_by(&:name).each.with_index(1) do |song, idx|
       puts "#{idx}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-
     end
   end
 
   def list_artists
     Artist.all.sort_by(&:name).each.with_index(1) do |art, idx|
       puts "#{idx}. #{art.name}"
-
     end
   end
 
   def list_genres
     Genre.all.sort_by(&:name).each.with_index(1) do |gen, idx|
       puts "#{idx}. #{gen.name}"
-
     end
   end
 
@@ -75,6 +72,6 @@ class MusicLibraryController
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
 
-  
+
 
 end
