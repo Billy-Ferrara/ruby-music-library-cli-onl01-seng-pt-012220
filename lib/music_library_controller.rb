@@ -22,6 +22,9 @@ class MusicLibraryController
       input = gets.strip
     end
 
+    while input = "list songs"
+      list_songs
+    end
 
   end
 
@@ -73,4 +76,6 @@ class MusicLibraryController
     end
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
+
+
 end
