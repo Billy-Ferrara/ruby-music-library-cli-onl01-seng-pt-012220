@@ -11,6 +11,9 @@ class MusicLibraryController
     while input != "exit"
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
+        if input = "list songs"
+          list_songs
+        end
       puts "To list all of the artists in your library, enter 'list artists'."
       puts "To list all of the genres in your library, enter 'list genres'."
       puts "To list all of the songs by a particular artist, enter 'list artist'."
@@ -73,5 +76,6 @@ class MusicLibraryController
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
 
+def
 
 end
